@@ -2,21 +2,27 @@ pipeline {
     agent any
 
     stages {
+		stage('Checkout') {
+			steps { 
+				echo 'Checkout'
+				checkout scm
+			}
+		}
+        stage('Build') {
+            steps {
+                echo 'Build'
+				bat 'mvn clean compile'
+            }
+        }
 	    stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Test'
 				bat 'mvn test'
             }
         }
-        stage('Build') {
+        stage('Package') {
             steps {
-                echo 'Building..'
-				bat 'mvn compile'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+				echo 'Package'
 				bat 'mvn package'
             }
         }
