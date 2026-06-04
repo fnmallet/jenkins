@@ -23,7 +23,7 @@ pipeline {
         stage('Package') {
             steps {
 				echo 'Package'
-				bat 'mvn package'
+				bat 'mvn jar:jar'
             }
         }
     }
