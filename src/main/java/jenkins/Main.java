@@ -1,4 +1,4 @@
-package paquete;
+package jenkins;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package paquete;
+package jenkins;
 
 public class Persona {
 	private int edad;

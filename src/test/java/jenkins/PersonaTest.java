@@ -1,4 +1,4 @@
-package paquete;
+package jenkins;
 
 import static org.junit.jupiter.api.Assertions.*;
 

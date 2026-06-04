@@ -1,6 +1,4 @@
 Manifest-Version: 1.0
-Built-By: ferna
-Build-Jdk: 21.0.10
-Main-Class: paquete.Main
+Build-Jdk-Spec: 21
 Created-By: Maven Integration for Eclipse
 
