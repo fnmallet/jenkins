@@ -8,7 +8,7 @@ class PersonaTest {
 
 	@Test
 	void test() {
-		Persona persona = new Persona(5);
+		Persona persona = new Persona(4);
 		
 		assertEquals(persona.getEdad(), 5);
 	}
